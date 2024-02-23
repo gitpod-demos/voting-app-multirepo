@@ -4,15 +4,13 @@ additionalRepositories:
   - url: https://github.com/gitpod-demos/voting-app-result
     checkoutLocation: result
   - url: https://github.com/gitpod-demos/voting-app-vote
-    checkoutLocation: https://github.com/gitpod-demos/voting-app-vote
+    checkoutLocation: vote
   - url: https://github.com/gitpod-demos/voting-app-worker
     checkoutLocation: worker
 
 tasks:
   - name: Build
     init: |
-      # wait for multirepo to finish
-      sleep 15
       docker pull postgres:15-alpine
       docker-compose build
     command: |
@@ -24,9 +22,6 @@ tasks:
       EOF
       code architecture.excalidraw.png
   - name: Run
-    init: |
-      # wait for multirepo to finish
-      sleep 15
     command: docker-compose -f docker-compose.yml up
     openMode: split-right
 
