@@ -14,7 +14,8 @@ Here are some of the reasons devops, security, and finance teams love Gitpod:
 🔐 Secure and protect your code and dev environments
 
 ## About this Demo Example
-This multi-repo demo example contains a simple voting application that can be launched in Docker compose. The `Vote`, `Worker` and `Result` components live on separate repositories but they are all brought into and built inside a single Gitpod dev environment (please see diagram and architecture below).
+This multi-repo demo example contains a simple voting application that can be launched in Docker compose. The `Vote`, `Worker` and `Result` components live on separate repositories but they are all brought into and built inside a single Gitpod dev environment (please see diagram and architecture below).  
+
 You can try it yourself right now! Simply click the link below to launch a new Gitpod workspace where you can play with the voting application in any web browser. No extra software is required, all you need is a free Gitpod account:
 
 https://gitpod.io/#https://github.com/gitpod-demos/voting-app-multirepo
